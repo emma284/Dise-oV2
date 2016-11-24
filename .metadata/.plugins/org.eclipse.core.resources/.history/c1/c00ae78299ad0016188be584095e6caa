@@ -1,0 +1,88 @@
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+import java.util.Vector;
+
+public class Caracteristica {
+	
+	int ponderacion;
+	List<Competencia> competencias;
+	Puesto puesto;
+	public Caracteristica(int ponderacion,List<Competencia> competencias, String codigo) {
+		
+		this.ponderacion=ponderacion;
+		this.competencias=competencias;
+		this.puesto=puesto.getPuesto(codigo);
+		
+	}
+	
+public Vector<Caracteristica> cargarCaracteristicas(){
+		
+		Vector<Caracteristica> salida= new Vector();
+		
+		try {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/dbgrupo6b", "root", "grupo6b");
+        Statement st = conexion.createStatement();
+        
+        ResultSet rs = st.executeQuery("SELECT DISTINCT codigo FROM Caracteristica;");
+        Vector<String> aux=new Vector();
+        if (rs != null){
+        	
+        	while (rs.next()){
+        		String codigo= (String) rs.getObject("codigo");
+        		aux.add(codigo);
+        	}
+        }
+        
+        /*rs = st.executeQuery("SELECT * FROM Caracteristica;"); //devuelve toda la tabla caracteristica
+        
+        if (rs != null) {
+           //recorre la tabla caracteristica tupla por tupla
+
+            while (rs.next()) {
+            	
+            	String codigo= (String) rs.getObject("codigo");
+            	
+            	
+            	
+            	int ponderacion= (int) rs.getObject("ponderacion");
+            	String competencia= (String) rs.getObject("id_competencia");
+            	
+            	
+            	Caracteristica c= new Caracteristica (ponderacion, competencia,codigo);
+            	
+            	salida.add(c);
+             
+            }
+            rs.close();
+        }
+        st.close();*/
+        
+        for(String a: aux){
+        	rs = st.executeQuery("SELECT * FROM Caracteristica WHERE codigo=\""+a+"\";");
+        }
+        
+        
+        return salida;
+		}
+		catch(SQLException s)
+        {
+            System.out.println("Error: SQL.");
+            System.out.println("SQLException: " + s.getMessage());
+        }
+        catch(Exception s)
+        {
+            System.out.println("Error: Varios.");
+            System.out.println("SQLException: " + s.getMessage());
+        }
+		return null;
+	}
+
+
+}

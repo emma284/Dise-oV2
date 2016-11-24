@@ -1,0 +1,11 @@
+LaunchTargetManager/configs/PerfilConsultor=org.eclipse.launchbar.core.launchTargetType.local\:Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Capit_lHumano,org.eclipse.launchbar.core.descriptorType.default\:hibernate,org.eclipse.launchbar.core.descriptorType.default\:PerfilConsultor,org.eclipse.launchbar.core.descriptorType.default\:crearTablas,org.eclipse.launchbar.core.descriptorType.default\:muestra,org.eclipse.launchbar.core.descriptorType.default\:main,org.eclipse.launchbar.core.descriptorType.default\:conectarMostrar2,org.eclipse.launchbar.core.descriptorType.default\:AltaPuesto,org.eclipse.launchbar.core.descriptorType.default\:LoginConsultor,org.eclipse.launchbar.core.descriptorType.default\:GestionDePuestos,org.eclipse.launchbar.core.descriptorType.default\:ButtonPopupSample,org.eclipse.launchbar.core.descriptorType.default\:AgregarPonderaciones,org.eclipse.launchbar.core.descriptorType.default\:InterfazAltaPuesto (1),org.eclipse.launchbar.core.descriptorType.default\:hibernate (1),org.eclipse.launchbar.core.descriptorType.default\:TPDISENIO,org.eclipse.launchbar.core.descriptorType.default\:interfazAltaPuesto
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:AgregarPonderaciones/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:AgregarPonderaciones/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:AltaPuesto\ (1)/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:AltaPuesto\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:AltaPuesto/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:AltaPuesto/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

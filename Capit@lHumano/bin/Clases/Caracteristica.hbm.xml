@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/11/2016 17:46:16 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+ <class name="Clases.Caracteristica" table="CARACTERISTICA">
+  <id access="field" name="id_caracteristica" type="int">
+   <column name="ID_CARACTERISTICA"/>
+   <generator class="assigned"/>
+  </id>
+  <property access="field" generated="never" lazy="false"
+   name="ponderacion" type="int">
+   <column name="PONDERACION"/>
+  </property>
+  <list access="field" lazy="true" name="competencias" table="COMPETENCIA">
+   <key>
+    <column name="ID_CARACTERISTICA"/>
+   </key>
+   <list-index base="0"/>
+   <one-to-many class="Clases.Competencia"/>
+  </list>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,31 @@
+La carga de datos puede realizarse de dos formas:
+
+* Cargando los datos a través de un archivo con extensión “.csv” que contenga la información de la 
+red respetando el siguiente formato:
+
+- Ingreso de peajes: 
+“P,[nombre de peaje],[costo],[acceso norte/no acceso norte], [acceso sur/no acceso sur]”
+
+- Ingreso de avenidas:
+“A, [Peaje de salida], [Peaje de llegada], [Capacidad], [Longitud], [Habilitada/Deshabilitada]”
+
+* Crear una red nueva, donde se le permite al usuario crear los peajes y las avenidas mediante la 
+interacción con la interfaz gráfica:
+
+- Creación de Peaje: Se hace desde el botón “Añadir Punto” y completando los campos 
+correspondientes.
+
+-Modificación de Peaje:
+Permite al usuario modificar el costo o el tipo de un peaje ya existente en el sistema.
+No se permite la modificación del nombre.
+
+- Creación de Avenida:
+Permite al usuario crear una avenida que conecte dos peajes.
+El peaje de salida y el de llegada deben ser distintos.
+Ésta funcionalidad sólo estará disponible cuando haya en el sistema por lo menos dos peajes 
+distintos.                           
+
+- Modificación de Avenida:
+El usuario, a través de ésta funcionalidad, podrá seleccionar dos peajes para posteriormente 
+modificar la capacidad, la longitud o el estado de la avenida que unirá éstos dos puntos, siempre 
+respetando las especificaciones previstas.

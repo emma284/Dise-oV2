@@ -1,0 +1,41 @@
+CAROLINA es un sistema abierto que permite al usuario crear, cargar, modificar o consultar 
+información sobre la red de caminos que pueden presentarse entre dos o más peajes.
+La creación, modificación y las consultas, se desarrollan más claramente en las siguientes 
+pestañas.
+
+*Peaje o Punto:
+
+Un Peaje es un nodo básico de la red que simplemente sirve para la unión de éste con otro Peaje, 
+el mismo dentro de sus especificaciones tendrá:
+
+Un nombre: Siempre empezará con la letra minúscula “p” y seguirá con el número identificatorio 
+que lo hace único en el sistema.
+
+Un costo: El valor monetario que costará el pasaje por el mismo. Se trata de un número entero 
+positivo.
+
+Tipo: Son tres los tipos de Peaje aceptados:
+- Acceso Norte (marcado con el color rojo), indica el comienzo de la red.
+- Acceso Sur (marcado con el color azul), indica el final de la red de Avenidas.
+- Interno (marcado con amarillo), son los Peajes que no tienen salida directa de la Red.
+
+*Avenida o tramo:
+
+Una avenida es un camino cuyo objetivo fundamental en el sistema es representar la unión de dos 
+peajes, las Avenidas tienen los siguientes elementos:
+Peaje inicio/Peaje Final: Son los puntos del sistema que unirá el camino propiamente dicho.
+
+Capacidad: Representa la cantidad (en miles) de autos que pueden pasar por un día por la 
+Avenida.
+
+Longitud: Es el tamaño en kilómetros de la Avenida,  o sea, el tramo que une los dos Peajes.
+
+Estado: La avenida puede tener dos estados posibles:
+- Habilitada, cuando la circulación de la misma puede llevarse a cabo sin ningún problema. 
+(Gráficamente se representa con una línea llena)
+- Deshabilitada, cuando sea imposible la circulación por la misma sea cual fuese el motivo. 
+(Gráficamente se representa con una línea punteada)
+
+No puede existir en el sistema una Avenida que una un mismo Peaje, pero si se puede llegar al 
+mismo peaje tomando diferentes avenidas, recorriendo diferentes peajes.
+Pueden existir Peajes sueltos sin tener una avenida asociada.

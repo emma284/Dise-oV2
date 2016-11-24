@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16/11/2016 17:46:16 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="Clases.Puesto" table="PUESTO">
+        <id name="codigo" type="int" access="field">
+            <column name="CODIGO" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="java.lang.String" access="field">
+            <column name="NOMBRE" />
+        </property>
+        <property name="empresa" type="java.lang.String" access="field">
+            <column name="EMPRESA" />
+        </property>
+        <property name="descripcion" type="java.lang.String" access="field">
+            <column name="DESCRIPCION" />
+        </property>
+        <many-to-one name="caracteristicas" class="Clases.Caracteristica" access="field" fetch="join">
+            <column name="CARACTERISTICAS" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

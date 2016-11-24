@@ -1,0 +1,30 @@
+Dentro de las consultas que se pueden realizar en el sistema a una red activa y cargada son:
+
+-	Camino mas corto:
+
+Ésta funcionalidad permite al usuario ingresar dos Peajes que esten cargados al sistema y 
+visualizar la red de caminos que unen éstos peajes recorriendo la menor cantidad de 
+kilometros posible, siempre que exista alguno.
+
+-	Camino menos Peajes:
+
+El usuario, luego de ingresar un peaje destino y uno final, visualizará una nueva red que 
+une los Peajes pasando por la menor cantidad de peajes posibles, siempre que se pueda.
+
+-	Puntos Accesibles: 
+
+Ingresando un Peaje que este en el sistema, se mostrará por pantalla no sólo la red 
+original con todos sus caminos, sino tambien, los Peajes a los que se puede llegar 
+partiendo del Peaje ingresado y sus caminos própiamente dichos.
+
+-	Trafico máximo:
+
+Calcula el tráfico máximo que puede circular desde el Acceso Norte del Sistema hasta el 
+Accesos Sur del mismo. Ésta funcionalidad, por consiguiente, funcionará sólo si el sistema 
+tiene cargado un Acceso Norte y un Acceso Sur.
+
+-	Puntos Accesible N:
+
+Permite al Usuario conocer a que otros Peajes y mediante que Avenidas puede llegar 
+desde un Peaje, que debe ingresar por pantalla, sin pasar por mas de un numero definido 
+de Peajes, que también el usuario debe ingresar.
